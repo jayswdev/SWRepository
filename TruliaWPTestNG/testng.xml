@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="Suite1" verbose="1" >
+  <test name="TruliaFF">
+  <groups>
+    <run>
+      <exclude name="Links"  />
+    </run>
+  </groups>
+  
+    <classes>
+       <class name="com.trulia.test.TestAgentLookUp" />
+    </classes>
+    
+  </test>
+  
+ 
+  <test name="TruliaChrome">
+    <classes>
+      
+      <class name="com.trulia.test.TestHomePage"/>
+    </classes>
+  </test>
+</suite>
